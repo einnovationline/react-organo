@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+------------------------------------------------------------------
+-------------React.js
+https://cursos.alura.com.br/course/react-desenvolvendo-javascript
+#Criação dentro de uma pasta D:\PHP\projetos\react\:
+1. npx create-react-app organo (organo nome do projeto)
+
+Para ver o projeto:
+1- ir na pasta do projeto D:\PHP\projetos\react\organo
+2- comando: npm start
+3- stop: ctrl + c 
+
+o foco do react é a criação de componentes
+
+o NPM é para rodar local e o npx é de forma remota
+
+Conhecendo Arrow Functions, por causa da sintaxe que lembra uma flecha: () =>
