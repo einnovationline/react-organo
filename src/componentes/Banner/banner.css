@@ -1,0 +1,9 @@
+//no css eu faço a moldura da página
+.banner {
+    background-color: #6278F7;
+    text-aling: center;
+}
+
+.banner img {
+    max-width: 100%;
+}
