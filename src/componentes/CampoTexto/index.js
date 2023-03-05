@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './CampoTexto.css'
 
 //props é uma variável 
@@ -6,13 +7,19 @@ const CampoTexto = (props) => {
 
     //é uma crase `` e não aspas
     const placeholderModificada = `${props.placeholder}...`
+    
+    //let valor = 'herlon'//variável
+
+    const aoDigitar = (evento) => {
+        props.alterado(evento.target.value)
+        //console.log(valor)
+    }
 
     return (
         <div className="campo-texto">
             <label>{props.label}</label>
-            <input placeholder={placeholderModificada}></input>
+            <input value={props.valor} onChange={aoDigitar} required={props.obrigatorio} placeholder={placeholderModificada}></input>
         </div>
-
     )
 }
 
