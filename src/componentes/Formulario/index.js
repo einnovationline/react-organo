@@ -15,6 +15,11 @@ const Formulario = (props) => {
         evento.preventDefault()//o comportamento padrão seria após o botão submit a página ser recarregada, com o preventDefault não permite
         //console.log('Form foi submetido =>', nome, cargo, imagem, time)
         props.colaboradorCadastrado({nome,cargo,imagem,time})
+    
+    setNome('')
+    setCargo('')
+    setImagem('')
+    setTime('')
     }
 
     return (
