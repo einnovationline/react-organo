@@ -86,3 +86,5 @@ o foco do react é a criação de componentes
 o NPM é para rodar local e o npx é de forma remota
 
 Conhecendo Arrow Functions, por causa da sintaxe que lembra uma flecha: () =>
+
+https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?node-id=134%3A128
