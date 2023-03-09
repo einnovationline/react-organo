@@ -90,5 +90,7 @@ Conhecendo Arrow Functions, por causa da sintaxe que lembra uma flecha: () =>
 https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?node-id=134%3A128
 
 
-#Projeto CEP
-https://www.youtube.com/watch?v=KdQa4Rd6K1A
+
+#Tutorial React
+https://reactjs.org/docs/getting-started.html
+
