@@ -1,18 +1,18 @@
 //página principal
 //caminho da pasta scr, antes tinha banner/banner q era o arquivo, com o uso do Arrow Functions mudou, ver notas no index.js
 import { useState } from 'react';
-import Banner from './componentes/Banner';
+import Banner from './componentes/Banner';//como está na raiz e busca na pasta src..
 import Formulario from './componentes/Formulario';
 import Rodape from './componentes/Rodape';
 import Time from './componentes/Time';
 
-function App() {
+export default function App() {
   const [colaboradores, setColaboradores] = useState([])
   const novoColaboradorAdicionado = (colaborador) => {
     //console.log(colaborador)
-    //debugger
-    setColaboradores([...colaboradores, colaborador])
-  }
+    debugger//para depurar no vscode x react
+    setColaboradores([...colaboradores, colaborador])//operador spread (...) cria um novo array que contém todos os elementos do array colaboradores existente, além de adicionar um novo elemento colaborador ao final desse array.
+  }//em resumo ele faz um adicionar ao que já existe
 
   const times = [
     {
@@ -47,20 +47,31 @@ function App() {
     }
   ]
 
+
+  function deleteCollaborator() {
+    console.log('Deletando Colaborador')
+  }
+
+  console.log("deleteCollaborator:", deleteCollaborator);
+
+  //times é o nome dado da props, q será pego onde se passa por exemplo props.times
   return (
     <div className="App">
       <Banner />
       <Formulario times={times.map(time => time.nome)} colaboradorCadastrado={colaborador => novoColaboradorAdicionado(colaborador)} />
-      {times.map(time => <Time
-        key={time.nome}
-        nome={time.nome}
-        corPrimaria={time.corPrimaria}
-        corSecundaria={time.corSecundaria}
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-      />)}
+      {times.map(time => 
+        <Time
+          key={time.nome}
+          nome={time.nome}
+          corPrimaria={time.corPrimaria}
+          corSecundaria={time.corSecundaria}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}//seleciona pra qual time o colaborador é
+          inDelete={deleteCollaborator}
+        />
+      )}
       <Rodape />
     </div>
   );
 }
 
-export default App;
+//export default App;

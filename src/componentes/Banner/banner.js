@@ -1,4 +1,5 @@
 import './banner.css'
+import React from 'react';
 
 //jsx
 //class é reservada do javascript e classname é do react
@@ -12,4 +13,4 @@ import './banner.css'
         )
     }
 
-//export default Banner com a Arrow Functions não é necessário esse export 
+//export default Banner como a Arrow Functions já faz o export não é necessário esse export 

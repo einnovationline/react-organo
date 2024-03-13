@@ -6,13 +6,14 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const [nome, setNome] = useState('')
+    const [nome, setNome] = useState('')///Para q o componente reaja a alguma alteração no valor de uma variável e se renderize novamente, precisamos indicar isto utilizando o useState. Do contrário, o valor vai ser alterado mas o DOM não será atualizado.
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
 
+    //constante que está no form abaixo quando clicar e submeter
     const aoSalvar = (evento) => {
-        evento.preventDefault()//o comportamento padrão seria após o botão submit a página ser recarregada, com o preventDefault não permite
+        evento.preventDefault()//o comportamento padrão seria após o botão submit a página ser recarregada, com o preventDefault não permite e mantem os valres
         //console.log('Form foi submetido =>', nome, cargo, imagem, time)
         props.colaboradorCadastrado({nome,cargo,imagem,time})
     

@@ -9,3 +9,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+//root.render usado para ambiente de desv para prevenir erros, com logs.
